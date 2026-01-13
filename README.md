@@ -45,7 +45,7 @@ Ce projet a été réalisé par un quadrinôme. Chaque membre s'est spécialisé
 
 1.  Cloner ce dépôt :
     ```bash
-    git clone [https://github.com/VOTRE_USERNAME/NOM_DU_REPO.git](https://github.com/VOTRE_USERNAME/NOM_DU_REPO.git)
+    git clone [https://github.com/Matrocco/SAE401.git](https://github.com/Matrocco/SAE401.git)
     ```
 2.  Ouvrir le fichier `.pkt` situé dans le dossier `/Maquette` avec **Cisco Packet Tracer**.
 3.  Pour tester la connectivité et les restrictions ACL, référez-vous à la section "Tests" du Write-Up.
