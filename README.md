@@ -29,10 +29,10 @@ Ce projet a été réalisé par un quadrinôme. Chaque membre s'est spécialisé
 
 | Membre de l'équipe | Spécialisation | Description succincte |
 | :--- | :--- | :--- |
-| **[Nom de l'étudiant 1]** | **Sécurisation DNS** | Mise en place de DNSSEC pour garantir l'authenticité des réponses DNS. |
-| **[Nom de l'étudiant 2]** | **Sécurisation WEB** | Durcissement des serveurs Web (HTTPS, configurations sécurisées). |
-| **[Nom de l'étudiant 3]** | **Tests de sécurité** | Scénarios d'attaques et vérification de la robustesse (Pentesting). |
-| **[Nom de l'étudiant 4]** | **Recommandations ANSSI** | Audit de la maquette via la checklist officielle de l'ANSSI. |
+| **Mathéo Crépieux** | **Sécurisation DNS** | Mise en place de DNSSEC pour garantir l'authenticité des réponses DNS. |
+| **Bptiste Allart** | **Sécurisation WEB** | Durcissement des serveurs Web (HTTPS, configurations sécurisées). |
+| **Thomas Dubourdieu, Arthur Parmentier** | **Tests de sécurité** | Scénarios d'attaques et vérification de la robustesse (Pentesting). |
+| **Alexis Stingre** | **Recommandations ANSSI** | Audit de la maquette via la checklist officielle de l'ANSSI. |
 
 ##  Contenu du dépôt
 
