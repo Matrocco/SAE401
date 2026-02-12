@@ -55,6 +55,7 @@ Ce projet a été réalisé par un quadrinôme. Chaque membre s'est spécialisé
 * **Protocole de Tunneling :** GRE (Generic Routing Encapsulation)
 * **Sécurisation du Tunnel :** IPSEC (Détails des algos de chiffrement/hachage dans le WU)
 * **Adressage IP :**
+  
 | Réseau : | IP/masque | Passerelle Réseau 1  | Passerelle Reseau 2 |
 | Vlan 10 | 172.16.10.0/24 | 172.16.10.254 | 172.16.10.253 |
 | Vlan 20 | 172.16.20.0/24 | 172.16.20.254 | 172.16.20.253 |
