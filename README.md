@@ -56,14 +56,15 @@ Ce projet a été réalisé par un quadrinôme. Chaque membre s'est spécialisé
 * **Sécurisation du Tunnel :** IPSEC (Détails des algos de chiffrement/hachage dans le WU)
 * **Adressage IP :**
   
-| Réseau : | IP/masque | Passerelle Réseau 1  | Passerelle Reseau 2 |
-| Vlan 10 | 172.16.10.0/24 | 172.16.10.254 | 172.16.10.253 |
-| Vlan 20 | 172.16.20.0/24 | 172.16.20.254 | 172.16.20.253 |
-| Vlan 30 | 172.16.30.0/24 | 172.16.30.254 | 172.16.30.253 |
-| Réseau 1 | 172.16.0.0/16 | 172.16.255.1 | X |
-| Réseau 2 | 172.16.0.0/24 | 172.16.255.2 | X |
-| Tunnel GRE  | XXXXXXX | 192.168.1.1/ | 192.168.1.2/30 |
-| Internet | XXXXXX/X |  |  |
+| **Réseau** | **Plage IP / Masque** | **Passerelle R1** | **Passerelle R2** |
+| --- | --- | --- | --- |
+| **VLAN 10** | `172.16.10.0/24` | 172.16.10.254 | 172.16.10.253 |
+| **VLAN 20** | `172.16.20.0/24` | 172.16.20.254 | 172.16.20.253 |
+| **VLAN 30** | `172.16.30.0/24` | 172.16.30.254 | 172.16.30.253 |
+| **Réseau Inter-R1** | `172.16.0.0/16` | 172.16.255.1 | — |
+| **Réseau Inter-R2** | `172.16.0.0/24` | 172.16.255.2 | — |
+| **Tunnel GRE** | `192.168.1.0/30` | 192.168.1.1 | 192.168.1.2 |
+| **Internet** | `0.0.0.0/0` | *DHCP/Public* | *DHCP/Public* |
 
 ---
 *Projet réalisé dans le cadre du BUT Réseaux & Télécoms - IUT de Béthune.*
