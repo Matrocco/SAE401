@@ -2,7 +2,7 @@
 
 # Problème :
 
-**le Cache Poisoning**
+**le DNS SPOOF**
 
 Des personnes se faisant  passer pour des domaines connus, il permet donc de rediriger un client vers un site frauduleux
 
