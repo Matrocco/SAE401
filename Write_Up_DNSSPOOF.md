@@ -7,7 +7,7 @@ L’objectif de cette manipulation était de réaliser une attaque de **DNS spoo
 * `arpspoof` : mise en place d’une attaque de type Man-in-the-Middle (MITM)
 * `dnsspoof` : injection de réponses DNS falsifiées
 
-Le but était de faire résoudre le domaine **entreprise.lan** vers l’adresse IP **172.16.40.10**, correspondant à la machine attaquante.
+Le but était de faire résoudre le domaine **sae.local** vers l’adresse IP **172.16.40.10**, correspondant à la machine attaquante.
 
 
 
@@ -28,7 +28,7 @@ Le but était de faire résoudre le domaine **entreprise.lan** vers l’adresse 
 Un fichier de correspondance a été créé afin de forcer `dnsspoof` à répondre avec l’adresse IP de l’attaquant :
 
 ```bash id="a1021"
-echo "172.16.40.10 entreprise.lan" | sudo tee /etc/hosts_spoof
+echo "172.16.40.10 sae.local" | sudo tee /etc/hosts_spoof
 ```
 
 
@@ -78,7 +78,7 @@ sudo dnsspoof -i eth0 -f /etc/hosts_spoof
 La vérification a été effectuée à l’aide de la commande suivante :
 
 ```bash id="a1026"
-dig entreprise.lan
+dig sae.local
 ```
 
 Résultats observés :
