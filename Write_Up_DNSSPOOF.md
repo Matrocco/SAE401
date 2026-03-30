@@ -9,7 +9,7 @@ L’objectif de cette manipulation était de réaliser une attaque de **DNS spoo
 
 Le but était de faire résoudre le domaine **entreprise.lan** vers l’adresse IP **172.16.40.10**, correspondant à la machine attaquante.
 
----
+
 
 ## Topologie du réseau
 
@@ -19,7 +19,7 @@ Le but était de faire résoudre le domaine **entreprise.lan** vers l’adresse 
 | Serveur DNS légitime (BIND) | 172.16.40.1  |
 | Machine victime             | 172.16.40.12 |
 
----
+
 
 ## Méthode mise en œuvre
 
@@ -31,7 +31,7 @@ Un fichier de correspondance a été créé afin de forcer `dnsspoof` à répond
 echo "172.16.40.10 entreprise.lan" | sudo tee /etc/hosts_spoof
 ```
 
----
+
 
 ### 2. Activation du routage IP
 
@@ -41,7 +41,7 @@ Le routage IP a été activé sur la machine attaquante afin de permettre le rel
 sudo sysctl -w net.ipv4.ip_forward=1
 ```
 
----
+
 
 ### 3. Mise en place de l’attaque MITM par ARP spoofing
 
@@ -71,7 +71,7 @@ L’outil `dnsspoof` a ensuite été démarré pour injecter de fausses réponse
 sudo dnsspoof -i eth0 -f /etc/hosts_spoof
 ```
 
----
+
 
 ### 5. Vérification sur la machine victime
 
@@ -87,7 +87,7 @@ Résultats observés :
 * ou bien la requête retourne `SERVFAIL` ;
 * l’adresse IP falsifiée n’est jamais obtenue.
 
----
+
 
 ## Analyse de l’échec de l’attaque
 
@@ -111,7 +111,7 @@ Par conséquent :
 
 Les outils tels que `dnsspoof`, `ettercap` ou `bettercap` ne sont pas capables de générer des signatures DNSSEC valides, car celles-ci nécessitent l’accès aux clés privées du serveur DNS légitime.
 
----
+
 
 ## Conclusion
 
@@ -126,7 +126,7 @@ Les raisons principales sont les suivantes :
 
 En conséquence, l’attaque est techniquement impossible tant que DNSSEC est activé et correctement vérifié par la machine victime.
 
----
+
 
 ## Contremesures et pistes théoriques
 
