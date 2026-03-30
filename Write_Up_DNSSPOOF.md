@@ -61,7 +61,7 @@ sudo arpspoof -i eth0 -t 172.16.40.1 172.16.40.12
 
 Cette étape permet de rediriger le trafic entre la victime et le serveur DNS vers la machine attaquante.
 
----
+
 
 ### 4. Lancement de dnsspoof
 
